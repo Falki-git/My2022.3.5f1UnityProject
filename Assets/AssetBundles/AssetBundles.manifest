@@ -1,0 +1,13 @@
+ManifestFileVersion: 0
+CRC: 2370882450
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: humans.bundle
+      Dependencies: {}
+    Info_1:
+      Name: microengineer_flightui.bundle
+      Dependencies: {}
+    Info_2:
+      Name: microengineer_oabui.bundle
+      Dependencies: {}
