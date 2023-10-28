@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2370882450
+CRC: 146401189
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -10,4 +10,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_2:
       Name: microengineer_oabui.bundle
+      Dependencies: {}
+    Info_3:
+      Name: kerbalui
       Dependencies: {}
