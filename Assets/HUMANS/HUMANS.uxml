@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="HUMANS.uss" />
+    <ui:VisualElement name="root" class="root main-gui">
+        <ui:VisualElement name="left-column" class="left-column">
+            <ui:VisualElement name="left-column__background" class="left-column__background">
+                <ui:VisualElement name="navigation-container" class="navigation">
+                    <ui:Button text="◀ PREV" display-tooltip-when-elided="true" name="prev" class="prev-button navigation-buttons" />
+                    <ui:Button text="NEXT ▶" display-tooltip-when-elided="true" name="next" class="next-button navigation-buttons" />
+                </ui:VisualElement>
+                <ui:VisualElement name="portrait-container" class="portrait-container">
+                    <ui:VisualElement name="portrait" class="portrait" />
+                </ui:VisualElement>
+                <ui:VisualElement name="data-container" class="data-container">
+                    <ui:VisualElement name="flag" class="flag" />
+                    <ui:VisualElement name="data-text-container" class="data-text-container">
+                        <ui:Label text="Name" display-tooltip-when-elided="true" name="fullname-label" class="fullname-label" />
+                        <ui:Label text="&lt;name surname&gt;" display-tooltip-when-elided="true" name="fullname" class="fullname" />
+                        <ui:Label text="Nation" display-tooltip-when-elided="true" name="nation-label" class="nation-label" />
+                        <ui:Label text="&lt;nation&gt;" display-tooltip-when-elided="true" name="nation" class="nation" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-column" class="right-column">
+            <ui:VisualElement name="right-header" class="right-header">
+                <ui:Button text="General" display-tooltip-when-elided="true" name="tab-1__button" class="button-tab button-tab--clicked" />
+                <ui:Button text="Customize" display-tooltip-when-elided="true" name="tab-2__button" class="button-tab button-tab--notclicked" style="margin-left: 10px;" />
+                <ui:Button text="Presets" display-tooltip-when-elided="true" name="tab-3__button" class="button-tab button-tab--notclicked" style="margin-left: 10px;" />
+                <ui:VisualElement style="align-items: flex-end; flex-grow: 1;">
+                    <ui:Button name="close-button" class="close-button">
+                        <ui:VisualElement name="close-button__background" class="close-button__background" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="right-body" class="right-body">
+                <ui:VisualElement name="right-body__background" class="right-body__background">
+                    <ui:VisualElement name="tab-1__contents" style="width: 100%; height: 100%; display: none;">
+                        <ui:Label text="&lt;b&gt;Adam Johnson&lt;/b&gt; attended &lt;b&gt;Kerbin Space University&lt;/b&gt; and lost an argument with the school mascot while pretending to study Zero G Ballet. Off the clock, Jebediah talks to themselves about larping, cartwheeling on runways, and breaking playground safety signs. They wish they spent less time studying Collision Safety." display-tooltip-when-elided="true" name="biography" style="white-space: normal;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="tab-2__contents" style="width: 100%; height: 100%; display: flex;">
+                        <ui:VisualElement name="cust__fullname" style="flex-direction: row; justify-content: space-between;">
+                            <ui:TextField value="filler text" text="&lt;name&gt;" name="cust__firstname" style="width: 40%;" />
+                            <ui:TextField picking-mode="Ignore" text="&lt;surname&gt;" name="cust__surname" style="width: 40%;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="tab-3__contents" style="width: 100%; height: 100%; display: none;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

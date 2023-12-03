@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="HUMANS.uss" />
+    <ui:VisualElement name="root" class="root culture-select__root">
+        <ui:VisualElement name="header" class="culture-select__header" style="align-items: flex-start;">
+            <ui:Label text="WELCOME TO H.U.M.A.N.S. !" display-tooltip-when-elided="true" name="title" class="culture-select__title" />
+            <ui:VisualElement style="align-items: flex-end; flex-grow: 1;">
+                <ui:Button name="close-button" class="close-button">
+                    <ui:VisualElement name="close-button__background" class="close-button__background" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="The first step in your journey is to a select a Culture preset. Culture defines initial parameters that your astronauts will be assigned with, such as nation, first/last name, skin color, etc.). Don&apos;t worry, no matter what culture you pick, you can still customize your &apos;nauts as much as you like!" display-tooltip-when-elided="true" name="intro-text" class="culture-select__intro-text" />
+        <ui:VisualElement name="body" />
+    </ui:VisualElement>
+</ui:UXML>

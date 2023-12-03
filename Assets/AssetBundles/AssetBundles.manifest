@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 146401189
+CRC: 1763420891
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -13,4 +13,10 @@ AssetBundleManifest:
       Dependencies: {}
     Info_3:
       Name: kerbalui
+      Dependencies: {}
+    Info_4:
+      Name: orbitalsurvey_maps.bundle
+      Dependencies: {}
+    Info_5:
+      Name: orbitalsurvey_ui.bundle
       Dependencies: {}
