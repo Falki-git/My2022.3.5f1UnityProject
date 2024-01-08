@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3958118629
+CRC: 1181619080
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 442fbbc060a99857f14f594eea5f4aa6
+    Hash: 2064674495faba03afad3110b995f582
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2d8df09e698f722ada1caa03d3413830
@@ -15,39 +15,42 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/OrbitalSurvey/VisualMaps/bop_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/pol_region_1024.png
 - Assets/OrbitalSurvey/Other/HiddenMap_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Duna_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Laythe_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Minmus_biome_1024.png
+- Assets/OrbitalSurvey/VisualMaps/bop_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/dres_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/jool_region_1024.png
 - Assets/OrbitalSurvey/VisualMaps/duna_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/kerbin_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/mun_region_1024.png
 - Assets/OrbitalSurvey/VisualMaps/eeloo_scaled_d_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Gilly_biome_1024.png
+- Assets/OrbitalSurvey/VisualMaps/eve_scaled_mesh_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/duna_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/gilly_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/eeloo_region_1024.png
 - Assets/OrbitalSurvey/Other/AllBlack_4096.png
-- Assets/OrbitalSurvey/VisualMaps/eve_scaled_d_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Dres_biome_1024.png
 - Assets/OrbitalSurvey/VisualMaps/tylo_scaled_d_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Moho_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Mun_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Vall_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Eve_biome_1024.png
+- Assets/OrbitalSurvey/RegionMaps/kerbin_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/moho_region_1024.png
+- Assets/OrbitalSurvey/HiddenMaps/minmus_undiscovered_1024.png
+- Assets/OrbitalSurvey/HiddenMaps/mun_undiscovered_1024.png
 - Assets/OrbitalSurvey/VisualMaps/ike_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/laythe_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/bop_region_1024.png
 - Assets/OrbitalSurvey/VisualMaps/laythe_scaled_water_d_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Jool_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Tylo_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Pol_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Ike_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Eeloo_biome_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Kerbin_biome_1024.png
+- Assets/OrbitalSurvey/RegionMaps/tylo_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/ike_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/minmus_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/dres_region_1024.png
 - Assets/OrbitalSurvey/VisualMaps/vall_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/laythe_region_1024.png
+- Assets/OrbitalSurvey/RegionMaps/eve_region_1024.png
 - Assets/OrbitalSurvey/VisualMaps/pol_scaled_d_1024.png
-- Assets/OrbitalSurvey/BiomeMaps/Bop_biome_1024.png
 - Assets/OrbitalSurvey/VisualMaps/minmus_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/moho_scaled_d_1024.png
+- Assets/OrbitalSurvey/HiddenMaps/kerbin_undiscovered_1024.png
 - Assets/OrbitalSurvey/VisualMaps/mun_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/jool_scaled_d_1024.png
 - Assets/OrbitalSurvey/VisualMaps/gilly_scaled_d_1024.png
+- Assets/OrbitalSurvey/RegionMaps/vall_region_1024.png
 Dependencies: []

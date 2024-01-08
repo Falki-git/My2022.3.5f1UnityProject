@@ -60,7 +60,7 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-image: url('/Assets/UI/humans/background_blue_pixelated.png');
+    background-image: url('project://database/Assets/UI/humans/background_blue_pixelated.png?fileID=2800000&guid=caba7b8b6e7e7c74cb39ccdfec02a841&type=3#background_blue_pixelated');
 }
 
 .left-column__background {
@@ -109,9 +109,9 @@
 
 .portrait-container {
     flex-direction: row;
-    height: 250px;
+    height: 224px;
     align-items: center;
-    width: 250px;
+    width: 280px;
     border-left-color: var(--frontground-darkerblue-4-translucent);
     border-right-color: var(--frontground-darkerblue-4-translucent);
     border-top-color: var(--frontground-darkerblue-4-translucent);
@@ -203,7 +203,7 @@
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image: url('/Assets/UI/humans/background_blue_pixelated_inverted.png');
+    background-image: url('project://database/Assets/UI/humans/background_blue_pixelated_inverted.png?fileID=21300000&guid=e4f45056cfc540d4191acd1efeeacf92&type=3#background_blue_pixelated_inverted');
     flex-grow: 1;
 }
 
@@ -281,7 +281,7 @@
 .close-button__background {
     width: 100%;
     height: 100%;
-    background-image: url('/Assets/UI/humans/k2d2_cross.png');
+    background-image: url('project://database/Assets/UI/humans/k2d2_cross.png?fileID=2800000&guid=92027093901b90d4994770ead7dffe8f&type=3#k2d2_cross');
     -unity-background-image-tint-color: rgb(192, 199, 213);
     -unity-background-scale-mode: scale-to-fit;
 }
@@ -323,7 +323,7 @@
 }
 
 .culture-select__title {
-    -unity-font-definition: url('/Packages/uitkforksp2.controls/Assets/Theme/Fonts/LEDCounter7/led_counter-7 SDF.asset');
+    -unity-font-definition: url('project://database/Packages/uitkforksp2.controls/Assets/Theme/Fonts/LEDCounter7/led_counter-7%20SDF.asset?fileID=11400000&guid=33e1e97b69ec355479ba49006381fc06&type=2#led_counter-7 SDF');
     font-size: var(--unity-metrics-default-font_very_big_size);
     color: rgb(255, 255, 255);
 }
@@ -349,7 +349,7 @@
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    -unity-font-definition: url('/Packages/uitkforksp2.controls/Assets/Theme/Fonts/LEDCounter7/led_counter-7 SDF.asset');
+    -unity-font-definition: url('project://database/Packages/uitkforksp2.controls/Assets/Theme/Fonts/LEDCounter7/led_counter-7%20SDF.asset?fileID=11400000&guid=33e1e97b69ec355479ba49006381fc06&type=2#led_counter-7 SDF');
     font-size: 40px;
     -unity-text-align: middle-center;
     background-color: rgba(0, 0, 0, 0.78);
@@ -378,13 +378,13 @@
 }
 
 .culture-control--empty {
-    background-image: url('/Assets/UI/humans/no_culture_image.png');
+    background-image: url('project://database/Assets/UI/humans/no_culture_image.png?fileID=21300000&guid=28ed8ef031f29cb449ba61158df23492&type=3#no_culture_image');
     -unity-background-image-tint-color: rgba(255, 255, 255, 0.47);
 }
 
 .culture-control--empty:hover {
     background-color: rgb(247, 203, 124);
-    -unity-background-image-tint-color: rgba(250, 223, 129, 255);
+    -unity-background-image-tint-color: rgb(250, 223, 129);
 }
 
 .culture-control__picture:active {
@@ -461,7 +461,7 @@
 }
 
 .color-change__sliders #unity-text-field {
-    width: 20px;
+    width: 25px;
     height: 100%;
     margin-left: 0;
     margin-right: 0;

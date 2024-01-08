@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="HUMANS.uss" />
+    <Style src="project://database/Assets/HUMANS/HUMANS.uss?fileID=7433441132597879392&amp;guid=44de8d7d0d309a647be3677923984186&amp;type=3#HUMANS" />
     <ui:VisualElement name="root" class="root main-gui">
         <ui:VisualElement name="left-column" class="left-column">
             <ui:VisualElement name="left-column__background" class="left-column__background">
