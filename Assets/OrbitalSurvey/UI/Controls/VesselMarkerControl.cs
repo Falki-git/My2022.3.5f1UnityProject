@@ -16,33 +16,33 @@ namespace OrbitalSurvey.UI.Controls
         public static string UssClassName_Latitude = UssClassName + "__latitude";
         public static string UssClassName_Longitude = UssClassName + "__longitude";
 
-        private Label NameLabel;
-        private VisualElement MarkerElement;
-        private Label LatitudeLabel;
-        private Label LongitudeLabel;
+        private Label _nameLabel;
+        private VisualElement _markerElement;
+        private Label _latitudeLabel;
+        private Label _longitudeLabel;
 
         public string NameValue
         {
-            get => NameLabel.text;
-            set => NameLabel.text = value;
+            get => _nameLabel.text;
+            set => _nameLabel.text = value;
         }
 
         public Texture2D MarkerTexture
         {
-            get => MarkerElement.style.backgroundImage.value.texture;
-            set => MarkerElement.style.backgroundImage = value;
+            get => _markerElement.style.backgroundImage.value.texture;
+            set => _markerElement.style.backgroundImage = value;
         }
 
         public double LatitudeValue
         {
             //get => LatitudeLabel.text;
-            set => LatitudeLabel.text = $"LAT: {value.ToString("F6")}";
+            set => _latitudeLabel.text = $"LAT: {value.ToString("F3")} °";
         }
 
         public double LongitudeValue
         {
             //get => LongitudeLabel.text;
-            set => LongitudeLabel.text = $"LON: {value.ToString("F6")}";
+            set => _longitudeLabel.text = $"LON: {value.ToString("F3")} °";
         }
 
         public VesselMarkerControl(string name, double latitude, double longitude) : this()
@@ -52,77 +52,94 @@ namespace OrbitalSurvey.UI.Controls
             LongitudeValue = longitude;
         }
 
+        public VesselMarkerControl(bool isVesselNameVisible, bool isGeoCoordinatesVisible) : this()
+        {
+            SetVesselNameVisibility(isVesselNameVisible);
+            SetGeoCoordinatesVisibility(isGeoCoordinatesVisible);
+        }
+
         public VesselMarkerControl()
         {
             AddToClassList(UssClassName);
 
-            NameLabel = new Label()
+            _nameLabel = new Label()
             {
                 name = "vessel-name"
             };
-            NameLabel.AddToClassList(UssClassName_Name);
-            hierarchy.Add(NameLabel);
+            _nameLabel.AddToClassList(UssClassName_Name);
+            hierarchy.Add(_nameLabel);
 
-            MarkerElement = new VisualElement()
+            _markerElement = new VisualElement()
             {
                 name = "vessel-marker"
             };
-            MarkerElement.AddToClassList(UssClassName_Marker);
-            hierarchy.Add(MarkerElement);
+            _markerElement.AddToClassList(UssClassName_Marker);
+            hierarchy.Add(_markerElement);
 
-            LatitudeLabel = new Label()
+            _latitudeLabel = new Label()
             {
                 name = "vessel-latitude"
             };
-            LatitudeLabel.AddToClassList(UssClassName_Latitude);
-            hierarchy.Add(LatitudeLabel);
+            _latitudeLabel.AddToClassList(UssClassName_Latitude);
+            hierarchy.Add(_latitudeLabel);
 
-            LongitudeLabel = new Label()
+            _longitudeLabel = new Label()
             {
                 name = "vessel-longitude"
             };
-            LongitudeLabel.AddToClassList(UssClassName_Longitude);
-            hierarchy.Add(LongitudeLabel);
+            _longitudeLabel.AddToClassList(UssClassName_Longitude);
+            hierarchy.Add(_longitudeLabel);
         }
 
         public void SetAsNormal()
         {
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
         }
 
         public void SetAsGood()
         {
-            MarkerElement.AddToClassList(UssClassName_MarkerGoodTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
+            _markerElement.AddToClassList(UssClassName_MarkerGoodTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
         }
 
         public void SetAsWarning()
         {
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
-            MarkerElement.AddToClassList(UssClassName_MarkerWarningTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
+            _markerElement.AddToClassList(UssClassName_MarkerWarningTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
         }
 
         public void SetAsError()
         {
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
-            MarkerElement.AddToClassList(UssClassName_MarkerErrorTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
+            _markerElement.AddToClassList(UssClassName_MarkerErrorTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerInnactiveTint);
         }
 
         public void SetAsInnactive()
         {
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
-            MarkerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
-            MarkerElement.AddToClassList(UssClassName_MarkerInnactiveTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerGoodTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerWarningTint);
+            _markerElement.RemoveFromClassList(UssClassName_MarkerErrorTint);
+            _markerElement.AddToClassList(UssClassName_MarkerInnactiveTint);
+        }
+
+        public void SetVesselNameVisibility(bool isVisible)
+        {
+            _nameLabel.visible = isVisible;
+        }
+
+        public void SetGeoCoordinatesVisibility(bool isVisible)
+        {
+            _latitudeLabel.visible = isVisible;
+            _longitudeLabel.visible = isVisible;
         }
 
         public new class UxmlFactory : UxmlFactory<VesselMarkerControl, UxmlTraits> { }
@@ -130,6 +147,7 @@ namespace OrbitalSurvey.UI.Controls
         {
             UxmlStringAttributeDescription _name = new()
             { name = "VesselName", defaultValue = "Fly-Safe-1" };
+
             UxmlDoubleAttributeDescription _latitude = new()
             { name = "Latitude", defaultValue = 45.813053 };
             UxmlDoubleAttributeDescription _longitude = new()

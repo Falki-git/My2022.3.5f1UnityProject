@@ -25,14 +25,12 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="side-bar" class="side-bar">
-                <OrbitalSurvey.UI.Controls.SideToggleControl focusable="true" Text="OVL" name="SideToggleControl" />
-                <OrbitalSurvey.UI.Controls.SideToggleControl focusable="true" Text="VES" name="SideToggleControl" />
-                <OrbitalSurvey.UI.Controls.SideToggleControl focusable="true" Text="GEO" />
+                <ui:VisualElement name="side-bar__upper" class="side-bar__upper" />
+                <ui:VisualElement name="side-bar__lower" class="side-bar__lower" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="footer" class="footer">
             <ui:VisualElement name="legend__container" class="legend__container" />
-            <ui:Toggle text="Overlay" name="planetary-overlay" class="overlay__toggle" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

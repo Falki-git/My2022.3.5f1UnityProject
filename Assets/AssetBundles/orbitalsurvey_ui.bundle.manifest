@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1045591975
+CRC: 3180969671
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 29537b526f95eb85408d8b6e33efdad3
+    Hash: 071db521f5de79188717132405e07c1a
   TypeTreeHash:
     serializedVersion: 2
     Hash: ff3fe76b283fb0647dffea6cd8aea77f
@@ -64,8 +64,6 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UIElements.StyleSheets.Dimension
 - AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.StyleValueHandle
-- AssemblyName: UnityEngine.UIElementsModule
-  ClassName: UnityEngine.UIElements.Toggle/UxmlFactory
 - AssemblyName: UnityEngine.UIElementsModule
   ClassName: UnityEngine.UIElements.UxmlRootElementFactory
 - AssemblyName: UnityEngine.UIElementsModule
